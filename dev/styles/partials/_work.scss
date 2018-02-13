@@ -1,0 +1,94 @@
+.work {
+
+	h2 {
+		font-size: 5.2rem;
+		margin: 60px 0 0 5%;
+	}
+	.container {
+		width: 90%;
+		margin: auto;
+		display: flex;
+		flex-direction: flex-row;
+		flex-wrap: wrap;
+
+		.projects {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			align-items: space-between;
+			justify-content: space-between;
+			margin: 60px auto;
+			opacity: 0;
+
+			.project-left {
+				width: 46%;
+
+				img {
+					display: block;
+					box-shadow: 12px 12px 1px rgba(0,0,92,0.7);
+
+				}
+			}
+
+			.project-right {
+				width: 48%
+			}
+
+			img {
+				width: 100%;
+			}
+
+			a {
+				text-decoration: none;
+				color: #00005C;
+			}
+
+			h3 {
+				font-size: 2rem;
+				margin: 0;
+				border-bottom: 4px solid;
+				width: 100%;
+				margin-bottom: 3%;
+			}
+
+			p {
+				font-size: 1.4rem;
+				line-height: 2.2rem;
+				margin: 0;
+			}
+
+			
+
+			.view {
+				display: flex;
+				flex-direction: row;
+				border-bottom: 4px solid #32b67a;
+				margin: 0;
+				width: fit-content;
+				transition: all 0.2s ease;
+				display: inline;
+
+				h4 {
+				font-size: 1.8rem;
+				margin-top: 1.2rem;
+				margin-bottom: 0;
+				width: auto;
+				display: inline;
+
+				}
+				
+				&:hover, &:active, &:focus {
+					border-bottom: 4px solid #00005C;
+
+				}
+
+				i {
+					font-size: 1.4rem;
+					padding: 1.6rem 0 0 0.7rem;
+				}
+			}
+
+		}
+	}
+	
+}

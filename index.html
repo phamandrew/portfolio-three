@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Andrew Pham</title>
+	<link rel="stylesheet" href="/public/styles/style.css">
+	<script src="https://use.fontawesome.com/023b380c33.js"></script>
+	<link rel="icon" type="image/png" href="public/assets/favicon.png">
+	<meta name="viewport" content="initial-scale=1.0; width=device-width;"> 
+</head>
+<body>
+	<header class="nav-down">
+		<div class="header-wrapper">
+			<h1>Andrew Pham</h1>
+			<ul>
+				<a href="#home" class="smooth">
+					<li>About</li>
+				</a>
+				<a href="#work" class="smooth">
+					<li>Projects</li>
+				</a>
+				<a href="#contact" class="smooth">
+					<li>Contact</li>
+				</a>
+			</ul>
+			<div class="hamburger">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</div>
+		</div>
+	</header>
+	<div class="mobile-nav nav-up">
+		<i class="fa fa-times nav-close" aria-hidden="true"></i>
+
+		<ul>
+			<a href="#home">
+				<li>About</li>
+			</a>
+			<a href="#work">
+				<li>Projects</li>
+			</a>
+			<a href="#contact">
+				<li>Contact</li>
+			</a>
+		</ul>
+	</div>
+	<section class="home" id="home">
+		<div class="home-bg">
+			<canvas></canvas>
+		</div>
+		<div class="home-wrapper">
+			<div class="home-text">
+				<p>Andrew Pham is a Front-End Developer based in Toronto. They're interested in working with new teams and projects to challenge and develop their skills.</p>
+				<p>Their skills include HTML5, CSS3, SASS, JavaScript, jQuery, React, Firebase, Responsive Design, Canvas, Photoshop, Illustrator, Github, Gulp, Terminal and more.</p>
+				<p>Outside of coding, they enjoy making music, shooting photos, skateboarding and playing chess.</p>
+				<a href="#work" class="smooth"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+			</div>
+
+		</div>
+
+	</section>
+	<section class="work" id="work">
+		<h2>Projects</h2>
+		<div class="container">
+			<div class="projects" id="wave-notation">
+				<div class="project-left">
+					<a href="http://andrewpham.io/wave-notation/"><img src="/public/assets/wn.png" alt="Screenshot of Wave Notation synthesizer application."></a>
+				</div>
+				<div class="project-right">
+					<a href="http://andrewpham.io/wave-notation/">
+						<h3>Web Audio API, JavaScript</h3>
+					</a>
+					<p>Wave Notation is an experiment in progress where users can synthesize musical notes with their keyboards by selecting audio waveforms, filters and adjusting gain.</p>
+					<a class="view" href="http://andrewpham.io/wave-notation/">
+						<h4>View Project</h4>
+						<i class="fa fa-chevron-right" aria-hidden="true"></i>
+
+					</a>
+				</div>
+			</div>
+			<div class="projects" id="spotsky">
+				<div class="project-left">
+					<a href="https://spot-app-c6b4c.firebaseapp.com/"><img src="/public/assets/sptsky.png" alt="Screenshot of Spotsky application."></a>
+				</div>
+				<div class="project-right">
+					<a href="https://spot-app-c6b4c.firebaseapp.com/"><h3>React.js, Firebase</h3></a>
+					<p>Spotsky is an application for skateboarders to share new spots they find with their friends. Users can add new spots with an image, name, location and description.</p>
+					<a class="view" href="https://spot-app-c6b4c.firebaseapp.com/">
+						<h4>View Project</h4>
+						<i class="fa fa-chevron-right" aria-hidden="true"></i>
+
+					</a>
+				</div>
+			</div>
+			<div class="projects" id="drink-the-world">
+				<div class="project-left">
+					<a href="http://www.andrewpham.io/drink-the-world/"><img src="/public/assets/dtw.png" alt="Screenshot of Drink The World application."></a>
+				</div>
+				<div class="project-right">
+					<a href="http://www.andrewpham.io/drink-the-world/"><h3>LCBO API, JavaScript, jQuery</h3></a>
+					<p>Drink The World allows users to select a country, alcohol type and price range to receive results from their local LCBO inventory. Results include an image, name, alcohol content, and price.</p>
+					<a class="view" href="http://www.andrewpham.io/drink-the-world/">
+						<h4>View Project</h4>
+						<i class="fa fa-chevron-right" aria-hidden="true"></i>
+
+					</a>
+				</div>
+			</div>
+			<div class="projects" id="over">
+				<div class="project-left">
+					<a href="http://www.andrewpham.io/over/"><img src="/public/assets/ovr.png" alt="Screenshot of Over web project."></a>
+				</div>
+				<div class="project-right">
+					<a href="http://www.andrewpham.io/over/"><h3>HTML5, CSS3, SASS</h3></a>
+					<p>Over is a pixel perfect and fully responsive replication of a provided PSD design for an e-commerce business.</p>
+					<a class="view" href="http://www.andrewpham.io/over/">
+						<h4>View Project</h4>
+						<i class="fa fa-chevron-right" aria-hidden="true"></i>
+
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contact" id="contact">
+			<div class="container">
+				<h2>Contact</h2>
+				<div class="contacts">
+					<a href="mailto:contact@andrewpham.io">E-Mail</a>
+					<a href="http://www.twitter.com/andrewpham_io">Twitter</a>
+					<a href="http://www.github.com/phamandrew">Github</a>
+					<a href="http://www.linkedin.com/in/awpham">LinkedIn</a>
+				</div>
+			</div>
+		</section>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="./public/scripts/canvas.js"></script>
+	<script src="./public/scripts/script.js"></script>
+</body>
+</html>
