@@ -1,4 +1,6 @@
 .work {
+	background-color: #00005C;
+	color: #32b67a;
 
 	h2 {
 		font-size: 5.2rem;
@@ -25,7 +27,7 @@
 
 				img {
 					display: block;
-					box-shadow: 12px 12px 1px rgba(0,0,92,0.7);
+					box-shadow: 18px 18px 1px #32b67a;
 
 				}
 			}
@@ -40,7 +42,7 @@
 
 			a {
 				text-decoration: none;
-				color: #00005C;
+				color: #32b67a;
 			}
 
 			h3 {
@@ -62,7 +64,7 @@
 			.view {
 				display: flex;
 				flex-direction: row;
-				border-bottom: 4px solid #32b67a;
+				border-bottom: 4px solid #00005C;
 				margin: 0;
 				width: fit-content;
 				transition: all 0.2s ease;
@@ -78,7 +80,7 @@
 				}
 				
 				&:hover, &:active, &:focus {
-					border-bottom: 4px solid #00005C;
+					border-bottom: 4px solid #32b67a;
 
 				}
 

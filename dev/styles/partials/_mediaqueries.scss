@@ -42,6 +42,17 @@
 	html {
 		font-size: 12px;
 	}
+
+	.about {
+		flex-direction: column;
+	}
+
+	.skills {
+		.skills-header {
+			height: 25vh;
+		}
+	}
+
 	.work .container .projects {
 		flex-direction: column;
 		align-items: center;
