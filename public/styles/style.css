@@ -308,15 +308,14 @@ header .header-wrapper {
   width: 100%;
   color: white;
   flex-direction: column;
-  margin: 100px auto; }
+  margin: 80px auto 0 auto; }
   .skills .skills-header {
+    position: relative;
     width: 90%;
-    margin: 0 auto 40px auto;
-    height: 40vh;
-    background-image: url(/public/assets/suburbia-crop.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative; }
+    margin: 0 auto; }
+    .skills .skills-header img {
+      width: 100%;
+      margin: auto; }
     .skills .skills-header h2 {
       color: white;
       position: absolute;
@@ -326,7 +325,7 @@ header .header-wrapper {
       font-size: 6rem; }
   .skills .skills-container {
     width: 90%;
-    margin: auto;
+    margin: 80px auto;
     display: flex; }
     .skills .skills-container .skillset {
       width: 50%;
@@ -347,12 +346,23 @@ header .header-wrapper {
 .work {
   background-color: #00005C;
   color: #32b67a; }
-  .work h2 {
-    font-size: 5.2rem;
-    margin: 60px 0 0 5%; }
+  .work .work-header {
+    position: relative;
+    width: 90%;
+    margin: 80px auto 0 auto; }
+    .work .work-header img {
+      width: 100%;
+      margin: auto; }
+    .work .work-header h2 {
+      color: white;
+      position: absolute;
+      top: -15%;
+      left: -1%;
+      margin: 0;
+      font-size: 6rem; }
   .work .container {
     width: 90%;
-    margin: auto;
+    margin: 30px auto 80px auto;
     display: flex;
     flex-direction: flex-row;
     flex-wrap: wrap; }
@@ -383,14 +393,22 @@ header .header-wrapper {
         width: 100%;
         margin-bottom: 3%; }
       .work .container .projects p {
-        font-size: 1.4rem;
-        line-height: 2.2rem;
+        font-size: 1.1rem;
+        line-height: 1.8rem;
         margin: 0; }
+      .work .container .projects .view-projects {
+        display: flex;
+        flex-direction: row; }
+        .work .container .projects .view-projects:hover, .work .container .projects .view-projects:active, .work .container .projects .view-projects:focus {
+          border-bottom: 4px solid #32b67a; }
+        .work .container .projects .view-projects i {
+          font-size: 1.4rem;
+          padding: 1.6rem 0 0 0.7rem; }
       .work .container .projects .view {
         display: flex;
         flex-direction: row;
         border-bottom: 4px solid #00005C;
-        margin: 0;
+        margin-right: 60px;
         width: fit-content;
         transition: all 0.2s ease;
         display: inline; }
@@ -400,20 +418,27 @@ header .header-wrapper {
           margin-bottom: 0;
           width: auto;
           display: inline; }
-        .work .container .projects .view:hover, .work .container .projects .view:active, .work .container .projects .view:focus {
-          border-bottom: 4px solid #32b67a; }
-        .work .container .projects .view i {
-          font-size: 1.4rem;
-          padding: 1.6rem 0 0 0.7rem; }
+
+.contact .contact-header {
+  position: relative;
+  width: 90%;
+  margin: 80px auto 0 auto; }
+  .contact .contact-header img {
+    width: 100%;
+    margin: auto; }
+  .contact .contact-header h2 {
+    color: white;
+    position: absolute;
+    top: -15%;
+    left: -1%;
+    margin: 0;
+    font-size: 6rem; }
 
 .contact .container {
   width: 90%;
   display: flex;
   flex-direction: column;
-  margin: 0 auto; }
-  .contact .container h2 {
-    font-size: 5.2rem;
-    margin: 60px 0 60px 0; }
+  margin: 50px auto 0 auto; }
   .contact .container .contacts {
     display: flex;
     justify-content: space-between;
@@ -429,7 +454,7 @@ header .header-wrapper {
 
 @media (min-width: 1286px) {
   html {
-    font-size: 22px; }
+    font-size: 24px; }
   .home .home-wrapper {
     margin-top: 180px; }
   .work .container .projects {
@@ -445,7 +470,7 @@ header .header-wrapper {
 
 @media (max-width: 768px) {
   html {
-    font-size: 12px; }
+    font-size: 15px; }
   .about {
     flex-direction: column; }
   .skills .skills-header {
@@ -457,11 +482,30 @@ header .header-wrapper {
       width: 90%; }
     .work .container .projects .project-right {
       width: 90%;
-      margin-top: 50px; } }
+      margin-top: 50px; }
+  .about {
+    background-color: #00005C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0; }
+    .about .about-left {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto; }
+      .about .about-left .about-bg {
+        width: 100%; }
+    .about .about-right {
+      width: 90%; }
+      .about .about-right p {
+        width: 100%; } }
 
 @media (max-width: 570px) {
   html {
-    font-size: 10px; }
+    font-size: 14px; }
   .home .home-wrapper {
     margin-top: 80px; }
   header .header-wrapper h1 {

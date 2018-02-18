@@ -2,7 +2,7 @@
 
 
 	html {
-		font-size: 22px;
+		font-size: 24px;
 	}
 	
 	.home .home-wrapper {
@@ -40,7 +40,7 @@
 @media (max-width: 768px) {
 
 	html {
-		font-size: 12px;
+		font-size: 15px;
 	}
 
 	.about {
@@ -66,12 +66,43 @@
 			margin-top: 50px;
 		}
 	}
+
+	.about {
+		// margin: 70px 0;
+		background-color: #00005C;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 100px 0;
+
+	.about-left {
+			width: 90%;
+			// height: 90vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto;
+
+			.about-bg {
+				width: 100%;
+			}
+	}
+	.about-right {
+		width: 90%;
+
+		p {
+			width: 100%;
+		}
+	}
+}
+
 }
 
 // /* Landscape phones and down */
 @media (max-width: 570px) {
 		html {
-		font-size: 10px;
+		font-size: 14px;
 	}
 	
 	.home .home-wrapper {

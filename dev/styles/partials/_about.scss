@@ -101,18 +101,18 @@
 		display: flex;
 		width: 100%;
 		color: white;
-		// background-color: #00005C;
 		flex-direction: column;
-		margin: 100px auto;
+		margin: 80px auto 0 auto;
 
 		.skills-header {
-			width: 90%;
-			margin: 0 auto 40px auto;
-			height: 40vh;
-			background-image: url(/public/assets/suburbia-crop.jpg);
-			background-position: center;
-			background-size: cover;
 			position: relative;
+			width: 90%;
+			margin: 0 auto;
+
+			img {
+				width: 100%;
+				margin: auto;
+			}
 
 			h2 {
 				color: white;
@@ -128,7 +128,7 @@
 
 		.skills-container {
 			width: 90%;
-			margin: auto;
+			margin: 80px auto;
 			display: flex;
 
 			.skillset {
