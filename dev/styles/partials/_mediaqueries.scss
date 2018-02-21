@@ -45,11 +45,22 @@
 
 	.about {
 		flex-direction: column;
+
+
 	}
 
 	.skills {
 		.skills-header {
 			height: 25vh;
+		}
+		.skills-container {
+			flex-direction: column;
+			width: 80%;
+
+			.skillset {
+				width: 100%;
+				margin: 10px auto;
+			}
 		}
 	}
 
@@ -91,9 +102,10 @@
 	.about-right {
 		width: 90%;
 
-		p {
+		.about-right_container {
 			width: 100%;
 		}
+
 	}
 }
 

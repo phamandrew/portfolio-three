@@ -14,18 +14,14 @@
 
 		h2 {
 			color: white;
-				position: absolute;
-				top: -15%;
-				left: -1%;
-				margin: 0;
-				font-size: 6rem;
+			position: absolute;
+			top: -2.2rem;
+			left: -1.2rem;
+			margin: 0;
+			font-size: 6rem;
 		}
 	}
 
-	// h2 {
-	// 	font-size: 5.2rem;
-	// 	margin: 60px 0 0 5%;
-	// }
 	.container {
 		width: 90%;
 		margin: 30px auto 80px auto;
@@ -46,11 +42,10 @@
 
 			.project-left {
 				width: 46%;
-
+				
 				img {
 					display: block;
 					box-shadow: 18px 18px 1px #32b67a;
-
 				}
 			}
 
@@ -81,45 +76,31 @@
 				margin: 0;
 			}
 			.view-projects {
+				display: flex;
+				flex-direction: row;
+				margin: 1.6rem 0;
 
+				.view {
 					display: flex;
-					flex-direction: row;
+					border-bottom: 4px solid #00005C;
+					margin-right: 60px;
+					width: fit-content;
+					transition: all 0.2s ease;
 
 					&:hover, &:active, &:focus {
 						border-bottom: 4px solid #32b67a;
-
 					}
 
+					h4 {
+						margin: 0;
+						font-size: 1.6rem;
+					}
 					i {
 						font-size: 1.4rem;
-						padding: 1.6rem 0 0 0.7rem;
+						padding: 0.3rem 0 0.3rem 0.8rem;
 					}
 				}
-
-			
-
-			.view {
-				display: flex;
-				flex-direction: row;
-				border-bottom: 4px solid #00005C;
-				margin-right: 60px;
-				width: fit-content;
-				transition: all 0.2s ease;
-				display: inline;
-
-				h4 {
-				font-size: 1.8rem;
-				margin-top: 1.2rem;
-				margin-bottom: 0;
-				width: auto;
-				display: inline;
-
-				}
-
-				
 			}
-
 		}
 	}
-	
 }

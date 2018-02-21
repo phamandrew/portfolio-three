@@ -268,8 +268,7 @@ header .header-wrapper {
 .about {
   background-color: #00005C;
   display: flex;
-  flex-direction: row;
-  padding: 100px 0; }
+  flex-direction: row; }
   .about .about-left {
     width: 50%;
     display: flex;
@@ -277,31 +276,52 @@ header .header-wrapper {
     justify-content: center; }
     .about .about-left .about-bg {
       width: 80%;
-      height: 70vh;
-      background-image: url(/public/assets/andrew-exp.jpg);
-      background-position: center;
-      background-size: cover;
-      position: relative; }
+      margin: 0 auto;
+      position: relative;
+      margin: 100px auto; }
+      .about .about-left .about-bg img {
+        width: 100%;
+        margin: 0 auto; }
       .about .about-left .about-bg h2 {
         color: white;
         position: absolute;
-        top: -10%;
-        left: -2%;
+        top: -2.2rem;
+        left: -1.2rem;
         margin: 0;
         font-size: 6rem; }
   .about .about-right {
     width: 50%;
-    margin: 100px auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center; }
-    .about .about-right p {
-      width: 80%;
-      color: white;
-      font-size: 1.1rem;
-      line-height: 1.8rem;
-      font-family: "arial"; }
+    .about .about-right .about-right_container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 80%; }
+      .about .about-right .about-right_container p {
+        width: 95%;
+        color: white;
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+        font-family: "arial"; }
+      .about .about-right .about-right_container .view-resume {
+        display: flex;
+        flex-direction: row;
+        color: white;
+        text-decoration: none;
+        border-bottom: 4px solid #00005C;
+        width: fit-content;
+        margin: 1.2rem 0; }
+        .about .about-right .about-right_container .view-resume:hover, .about .about-right .about-right_container .view-resume:active, .about .about-right .about-right_container .view-resume:focus {
+          border-bottom: 4px solid white; }
+        .about .about-right .about-right_container .view-resume h4 {
+          margin: 0;
+          font-size: 1.6rem; }
+        .about .about-right .about-right_container .view-resume i {
+          font-size: 1.4rem;
+          padding: 0.3rem 0 0.3rem 0.8rem; }
 
 .skills {
   display: flex;
@@ -319,13 +339,13 @@ header .header-wrapper {
     .skills .skills-header h2 {
       color: white;
       position: absolute;
-      top: -15%;
-      left: -1%;
+      top: -2.2rem;
+      left: -1.2rem;
       margin: 0;
       font-size: 6rem; }
   .skills .skills-container {
     width: 90%;
-    margin: 80px auto;
+    margin: 40px auto;
     display: flex; }
     .skills .skills-container .skillset {
       width: 50%;
@@ -356,8 +376,8 @@ header .header-wrapper {
     .work .work-header h2 {
       color: white;
       position: absolute;
-      top: -15%;
-      left: -1%;
+      top: -2.2rem;
+      left: -1.2rem;
       margin: 0;
       font-size: 6rem; }
   .work .container {
@@ -398,26 +418,22 @@ header .header-wrapper {
         margin: 0; }
       .work .container .projects .view-projects {
         display: flex;
-        flex-direction: row; }
-        .work .container .projects .view-projects:hover, .work .container .projects .view-projects:active, .work .container .projects .view-projects:focus {
-          border-bottom: 4px solid #32b67a; }
-        .work .container .projects .view-projects i {
-          font-size: 1.4rem;
-          padding: 1.6rem 0 0 0.7rem; }
-      .work .container .projects .view {
-        display: flex;
         flex-direction: row;
-        border-bottom: 4px solid #00005C;
-        margin-right: 60px;
-        width: fit-content;
-        transition: all 0.2s ease;
-        display: inline; }
-        .work .container .projects .view h4 {
-          font-size: 1.8rem;
-          margin-top: 1.2rem;
-          margin-bottom: 0;
-          width: auto;
-          display: inline; }
+        margin: 1.6rem 0; }
+        .work .container .projects .view-projects .view {
+          display: flex;
+          border-bottom: 4px solid #00005C;
+          margin-right: 60px;
+          width: fit-content;
+          transition: all 0.2s ease; }
+          .work .container .projects .view-projects .view:hover, .work .container .projects .view-projects .view:active, .work .container .projects .view-projects .view:focus {
+            border-bottom: 4px solid #32b67a; }
+          .work .container .projects .view-projects .view h4 {
+            margin: 0;
+            font-size: 1.6rem; }
+          .work .container .projects .view-projects .view i {
+            font-size: 1.4rem;
+            padding: 0.3rem 0 0.3rem 0.8rem; }
 
 .contact .contact-header {
   position: relative;
@@ -429,8 +445,8 @@ header .header-wrapper {
   .contact .contact-header h2 {
     color: white;
     position: absolute;
-    top: -15%;
-    left: -1%;
+    top: -2.2rem;
+    left: -1.2rem;
     margin: 0;
     font-size: 6rem; }
 
@@ -475,6 +491,12 @@ header .header-wrapper {
     flex-direction: column; }
   .skills .skills-header {
     height: 25vh; }
+  .skills .skills-container {
+    flex-direction: column;
+    width: 80%; }
+    .skills .skills-container .skillset {
+      width: 100%;
+      margin: 10px auto; }
   .work .container .projects {
     flex-direction: column;
     align-items: center; }
@@ -500,7 +522,7 @@ header .header-wrapper {
         width: 100%; }
     .about .about-right {
       width: 90%; }
-      .about .about-right p {
+      .about .about-right .about-right_container {
         width: 100%; } }
 
 @media (max-width: 570px) {
