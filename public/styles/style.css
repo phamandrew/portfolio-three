@@ -555,6 +555,8 @@ header .header-wrapper {
       justify-content: center; }
       .about .about-container .about-left .about-bg {
         width: 60%; }
+        .about .about-container .about-left .about-bg h2 {
+          font-size: 5rem; }
     .about .about-container .about-right {
       width: 80%;
       margin: 2rem auto 0 auto; }
