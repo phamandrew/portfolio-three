@@ -2,7 +2,7 @@
 
 
 	html {
-		font-size: 24px;
+		font-size: 20px;
 	}
 	
 	.home .home-wrapper {
@@ -18,9 +18,9 @@
 
 
 // /* Portrait tablet and small desktops */
-@media (max-width: 940px) {
+@media (max-width: 1285px) {
 	html {
-		font-size: 15px;
+		font-size: 18px;
 	}
 	
 	.home .home-wrapper {
@@ -37,21 +37,41 @@
 
 
 // /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: 940px) {
 
 	html {
-		font-size: 15px;
+		font-size: 16px;
 	}
 
-	.about {
-		flex-direction: column;
+	.home {
+		.home-bg {
+			width: 80%;
 
+			h1 {
+				font-size: 5.8rem;
+				line-height: 5.2rem;
+				top: -2.4rem;
+				left: -2.2rem;
+			}
+			h2 {
+				font-size: 2.8rem;
+				line-height: 2.8rem;
+				bottom: -0.4rem;
+				right: -2.3rem;
+			}
+			img {
 
+			}
+		}
 	}
+
+
+
+	
 
 	.skills {
 		.skills-header {
-			height: 25vh;
+			
 		}
 		.skills-container {
 			flex-direction: column;
@@ -59,7 +79,7 @@
 
 			.skillset {
 				width: 100%;
-				margin: 10px auto;
+				margin: 0.8rem auto;
 			}
 		}
 	}
@@ -67,47 +87,25 @@
 	.work .container .projects {
 		flex-direction: column;
 		align-items: center;
+		width: 100%;
 
 		.project-left {
-			width: 90%;
+			width: 100%;
 		}
 
 		.project-right {
-			width: 90%;
+			width: 100%;
 			margin-top: 50px;
 		}
 	}
 
-	.about {
-		// margin: 70px 0;
-		background-color: #00005C;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 100px 0;
 
-	.about-left {
-			width: 90%;
-			// height: 90vh;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			margin: 0 auto;
 
-			.about-bg {
-				width: 100%;
-			}
-	}
-	.about-right {
-		width: 90%;
-
-		.about-right_container {
-			width: 100%;
+	.contact {
+		.container {
+			width: 80%;
 		}
-
 	}
-}
 
 }
 
@@ -115,6 +113,61 @@
 @media (max-width: 570px) {
 		html {
 		font-size: 14px;
+	}
+
+	.home {
+		.home-bg {
+			width: 80%;
+
+			h1 {
+				font-size: 3.8rem;
+				line-height: 3.2rem;
+				top: -1.4rem;
+				left: -1.2rem;
+			}
+			h2 {
+				font-size: 1.8rem;
+				line-height: 1.8rem;
+				bottom: -0.2rem;
+				right: -1.3rem;
+			}
+			img {
+
+			}
+		}
+	}
+
+	.about {
+		.about-container {
+			// margin: 70px 0;
+			background-color: #00005C;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin: 4rem auto;
+			// padding: 100px 0;
+
+			.about-left {
+				width: 90%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				.about-bg {
+					width: 60%;
+				}
+			}
+			.about-right {
+				width: 80%;
+				margin: 2rem auto 0 auto;
+
+				.about-right_container {
+					width: 100%;
+					padding-left: 2rem;
+				}
+			}
+		}
 	}
 	
 	.home .home-wrapper {

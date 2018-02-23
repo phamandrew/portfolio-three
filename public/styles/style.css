@@ -235,100 +235,103 @@ header .header-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: auto;
   width: 100%;
   height: 100vh; }
   .home .home-bg {
-    width: 70%;
-    height: 80vh;
-    background-image: url(/public/assets/turbine-exp.jpg);
+    width: 65%;
     background-position: center;
     background-size: cover;
     margin: auto;
     position: relative; }
+    .home .home-bg img {
+      width: 100%; }
     .home .home-bg h1 {
       position: absolute;
-      font-size: 100px;
+      font-size: 5.8rem;
       color: white;
-      line-height: 95px;
-      top: -8%;
-      left: -8%;
+      line-height: 5rem;
+      top: -2rem;
+      left: -3.2rem;
       margin: 0;
       font-family: "arial black"; }
     .home .home-bg h2 {
       position: absolute;
       color: white;
-      font-size: 54px;
-      line-height: 48px;
-      bottom: -8%;
-      right: -5.3%;
+      font-size: 2.8rem;
+      line-height: 2.8rem;
+      bottom: -0.4rem;
+      right: -3.3rem;
       margin: 0;
       font-family: "arial black"; }
 
 .about {
-  background-color: #00005C;
-  display: flex;
-  flex-direction: row; }
-  .about .about-left {
-    width: 50%;
+  background-color: #00005C; }
+  .about .about-container {
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center; }
-    .about .about-left .about-bg {
-      width: 80%;
-      margin: 0 auto;
-      position: relative;
-      margin: 100px auto; }
-      .about .about-left .about-bg img {
-        width: 100%;
-        margin: 0 auto; }
-      .about .about-left .about-bg h2 {
-        color: white;
-        position: absolute;
-        top: -2.2rem;
-        left: -1.2rem;
-        margin: 0;
-        font-size: 6rem; }
-  .about .about-right {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center; }
-    .about .about-right .about-right_container {
+    flex-direction: row;
+    margin: 6.8rem auto; }
+    .about .about-container .about-left {
+      width: 50%;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 80%; }
-      .about .about-right .about-right_container p {
-        width: 95%;
-        color: white;
-        font-size: 1.1rem;
-        line-height: 1.8rem;
-        font-family: "arial"; }
-      .about .about-right .about-right_container .view-resume {
-        display: flex;
-        flex-direction: row;
-        color: white;
-        text-decoration: none;
-        border-bottom: 4px solid #00005C;
-        width: fit-content;
-        margin: 1.2rem 0; }
-        .about .about-right .about-right_container .view-resume:hover, .about .about-right .about-right_container .view-resume:active, .about .about-right .about-right_container .view-resume:focus {
-          border-bottom: 4px solid white; }
-        .about .about-right .about-right_container .view-resume h4 {
+      align-items: center;
+      justify-content: center; }
+      .about .about-container .about-left .about-bg {
+        width: 80%;
+        margin: 0 auto;
+        position: relative; }
+        .about .about-container .about-left .about-bg img {
+          width: 100%;
+          margin: 0 auto; }
+        .about .about-container .about-left .about-bg h2 {
+          color: white;
+          position: absolute;
+          top: -2.2rem;
+          left: -1.2rem;
           margin: 0;
-          font-size: 1.6rem; }
-        .about .about-right .about-right_container .view-resume i {
-          font-size: 1.4rem;
-          padding: 0.3rem 0 0.3rem 0.8rem; }
+          font-size: 6rem; }
+    .about .about-container .about-right {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center; }
+      .about .about-container .about-right .about-right_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%; }
+        .about .about-container .about-right .about-right_container p {
+          width: 95%;
+          color: white;
+          font-size: 1.1rem;
+          line-height: 1.8rem;
+          font-family: "arial"; }
+        .about .about-container .about-right .about-right_container .view-resume {
+          display: flex;
+          flex-direction: row;
+          color: white;
+          text-decoration: none;
+          border-bottom: 4px solid #00005C;
+          width: fit-content;
+          margin: 1.2rem 0; }
+          .about .about-container .about-right .about-right_container .view-resume:hover, .about .about-container .about-right .about-right_container .view-resume:active, .about .about-container .about-right .about-right_container .view-resume:focus {
+            border-bottom: 4px solid white; }
+          .about .about-container .about-right .about-right_container .view-resume h4 {
+            margin: 0;
+            font-size: 1.4rem; }
+          .about .about-container .about-right .about-right_container .view-resume i {
+            font-size: 1.2rem;
+            padding: 0.3rem 0 0.3rem 0.8rem; }
 
 .skills {
   display: flex;
   width: 100%;
   color: white;
   flex-direction: column;
-  margin: 80px auto 0 auto; }
+  margin: 4.6rem auto 2rem auto; }
   .skills .skills-header {
     position: relative;
     width: 90%;
@@ -345,7 +348,7 @@ header .header-wrapper {
       font-size: 6rem; }
   .skills .skills-container {
     width: 90%;
-    margin: 40px auto;
+    margin: 3.2rem auto;
     display: flex; }
     .skills .skills-container .skillset {
       width: 50%;
@@ -365,7 +368,11 @@ header .header-wrapper {
 
 .work {
   background-color: #00005C;
-  color: #32b67a; }
+  color: #32b67a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   .work .work-header {
     position: relative;
     width: 90%;
@@ -382,7 +389,7 @@ header .header-wrapper {
       font-size: 6rem; }
   .work .container {
     width: 90%;
-    margin: 30px auto 80px auto;
+    margin: 2.8rem auto 4.2rem auto;
     display: flex;
     flex-direction: flex-row;
     flex-wrap: wrap; }
@@ -392,7 +399,7 @@ header .header-wrapper {
       flex-direction: row;
       align-items: space-between;
       justify-content: space-between;
-      margin: 60px auto;
+      margin: 3.2rem auto;
       opacity: 0; }
       .work .container .projects .project-left {
         width: 46%; }
@@ -419,20 +426,22 @@ header .header-wrapper {
       .work .container .projects .view-projects {
         display: flex;
         flex-direction: row;
-        margin: 1.6rem 0; }
+        flex-wrap: wrap;
+        margin: 0; }
         .work .container .projects .view-projects .view {
           display: flex;
           border-bottom: 4px solid #00005C;
           margin-right: 60px;
+          margin-top: 1rem;
           width: fit-content;
           transition: all 0.2s ease; }
           .work .container .projects .view-projects .view:hover, .work .container .projects .view-projects .view:active, .work .container .projects .view-projects .view:focus {
             border-bottom: 4px solid #32b67a; }
           .work .container .projects .view-projects .view h4 {
             margin: 0;
-            font-size: 1.6rem; }
+            font-size: 1.4rem; }
           .work .container .projects .view-projects .view i {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             padding: 0.3rem 0 0.3rem 0.8rem; }
 
 .contact .contact-header {
@@ -470,64 +479,88 @@ header .header-wrapper {
 
 @media (min-width: 1286px) {
   html {
-    font-size: 24px; }
+    font-size: 20px; }
   .home .home-wrapper {
     margin-top: 180px; }
   .work .container .projects {
     margin: 70px auto; } }
 
-@media (max-width: 940px) {
+@media (max-width: 1285px) {
   html {
-    font-size: 15px; }
+    font-size: 18px; }
   .home .home-wrapper {
     margin-top: 120px; }
   .work .container .projects {
     margin: 40px auto; } }
 
-@media (max-width: 768px) {
+@media (max-width: 940px) {
   html {
-    font-size: 15px; }
-  .about {
-    flex-direction: column; }
-  .skills .skills-header {
-    height: 25vh; }
+    font-size: 16px; }
+  .home .home-bg {
+    width: 80%; }
+    .home .home-bg h1 {
+      font-size: 5.8rem;
+      line-height: 5.2rem;
+      top: -2.4rem;
+      left: -2.2rem; }
+    .home .home-bg h2 {
+      font-size: 2.8rem;
+      line-height: 2.8rem;
+      bottom: -0.4rem;
+      right: -2.3rem; }
   .skills .skills-container {
     flex-direction: column;
     width: 80%; }
     .skills .skills-container .skillset {
       width: 100%;
-      margin: 10px auto; }
+      margin: 0.8rem auto; }
   .work .container .projects {
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    width: 100%; }
     .work .container .projects .project-left {
-      width: 90%; }
+      width: 100%; }
     .work .container .projects .project-right {
-      width: 90%;
+      width: 100%;
       margin-top: 50px; }
-  .about {
+  .contact .container {
+    width: 80%; } }
+
+@media (max-width: 570px) {
+  html {
+    font-size: 14px; }
+  .home .home-bg {
+    width: 80%; }
+    .home .home-bg h1 {
+      font-size: 3.8rem;
+      line-height: 3.2rem;
+      top: -1.4rem;
+      left: -1.2rem; }
+    .home .home-bg h2 {
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      bottom: -0.2rem;
+      right: -1.3rem; }
+  .about .about-container {
     background-color: #00005C;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 0; }
-    .about .about-left {
+    margin: 4rem auto; }
+    .about .about-container .about-left {
       width: 90%;
       display: flex;
       align-items: center;
-      justify-content: center;
-      margin: 0 auto; }
-      .about .about-left .about-bg {
-        width: 100%; }
-    .about .about-right {
-      width: 90%; }
-      .about .about-right .about-right_container {
-        width: 100%; } }
-
-@media (max-width: 570px) {
-  html {
-    font-size: 14px; }
+      justify-content: center; }
+      .about .about-container .about-left .about-bg {
+        width: 60%; }
+    .about .about-container .about-right {
+      width: 80%;
+      margin: 2rem auto 0 auto; }
+      .about .about-container .about-right .about-right_container {
+        width: 100%;
+        padding-left: 2rem; }
   .home .home-wrapper {
     margin-top: 80px; }
   header .header-wrapper h1 {
