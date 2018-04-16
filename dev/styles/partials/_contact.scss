@@ -12,14 +12,12 @@
 
 			h2 {
 				color: white;
-					position: absolute;
-					top: -2.2rem;
-					left: -1.2rem;
-					margin: 0;
-					font-size: 6rem;
+				position: absolute;
+				top: -2.2rem;
+				left: -1.2rem;
+				margin: 0;
+				font-size: 6rem;
 			}
-
-
 		}
 
 	.container {
@@ -38,12 +36,14 @@
 				color: #00005C;
 				border-bottom: 4px solid #32b67a;
 				transition: all 0.2s ease;
+				width: fit-content;
+				// width: moz-fit-content;
+
 
 				&:hover, &:active, &:focus {
-						border-bottom: 4px solid #00005C;
+					border-bottom: 4px solid #00005C;
 				}
 			}
-			
 		}
 	}
 }

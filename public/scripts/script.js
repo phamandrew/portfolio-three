@@ -5,8 +5,6 @@ var delta = 5;
 var navbarHeight = $('header').outerHeight();
 
 
-// on scroll, let interval know that scroll has occurred
-
 $(window).scroll(function(event){
 	didScroll = true;
 
@@ -19,49 +17,6 @@ $(window).scroll(function(event){
 		}
 	});
 });
-
-// run hasScrolled() and reset didScroll status
-
-setInterval(function(){
-	if (didScroll) {
-		hasScrolled();
-		didScroll = false;
-	}
-}, 250);
-
-
-function hasScrolled(){
-	var scrollTop = $(this).scrollTop();
-
-	if(Math.abs(lastScrollTop - scrollTop) <= delta)
-		return;
-
-	if(scrollTop > lastScrollTop && scrollTop > navbarHeight){
-		$('header').removeClass('nav-down').addClass('nav-up');
-	}
-	else{
-		if (scrollTop + $(window).height() < $(document).height()){
-			$('header').removeClass('nav-up').addClass('nav-down');
-		}
-	}
-
-	lastScrollTop = scrollTop;
-}
-
-
-
-	$('.hamburger, .mobile-nav-down i').on('click', function(){
-		$('.mobile-nav').toggleClass('nav-up').toggleClass('mobile-nav-down');
-		
-	});
-
-	$('.mobile-nav ul a').on('click', function(){
-		$('.mobile-nav').removeClass('mobile-nav-down').addClass('nav-up');
-	});
-
-	$('.nav-close').on('click', function(){
-		$('.mobile-nav').removeClass('mobile-nav-down').addClass('nav-up');
-	});
 
 	// Smooth Scroll
 
@@ -79,11 +34,21 @@ $(document).ready(function(){
 
 });
 
+// MENU
+
+var hamburger = document.querySelector(".hamburger");
+hamburger.addEventListener("click", showMenu, false);
+var hamburgerCollapse = document.querySelector(".hamburger--collapse")
+
+var flyoutMenu = document.querySelector("#flyoutMenu");
+flyoutMenu.addEventListener("click", showMenu, false);
+
+function showMenu(e) {
+	flyoutMenu.classList.toggle("show");
+	hamburgerCollapse.classList.toggle("is-active");
+}
 
 
-
-
-// fade in
 
 
 

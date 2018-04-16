@@ -1,0 +1,58 @@
+
+.skills {
+	display: flex;
+	width: 100%;
+	color: white;
+	flex-direction: column;
+	
+
+	.skills-header {
+		position: relative;
+		width: 90%;
+		margin: 4.6rem auto 0 auto;
+
+		img {
+			width: 100%;
+			margin: auto;
+		}
+
+		h2 {
+			color: white;
+			position: absolute;
+			top: -2.2rem;
+			left: -1.2rem;
+			margin: 0;
+			font-size: 6rem;
+		}
+
+
+	}
+
+	.skills-container {
+		width: 90%;
+		margin: 3.2rem auto;
+		display: flex;
+
+		.skillset {
+			width: 50%;
+			color: #00005C;
+
+			h3 {
+				width: 90%;
+				border-bottom: 2px solid #00005C;
+				font-size: 1.8rem;
+				margin: 0;
+			}
+			ul {
+				margin: 20px 0;
+				padding: 0;
+				list-style: none;
+
+				li {
+					font-size: 1.2rem;
+					margin: 1rem 0;
+				}
+			}
+		}
+	}
+}
