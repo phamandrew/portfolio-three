@@ -428,6 +428,9 @@ body {
       left: -1.2rem;
       margin: 0;
       font-size: 6rem; }
+  .work #lock-up .project-left img {
+    width: 45%;
+    margin: 0 auto; }
   .work .container {
     width: 90%;
     margin: 2.8rem auto 4.2rem auto;
